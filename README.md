@@ -7,3 +7,11 @@ The backend code of my personal web portfolio that call the GitHub API and get t
 3. Make sure maven and jvm are installed. If maven is not installed, download maven from the following link https://maven.apache.org/download.cgi and configure the package based on the instructions here https://maven.apache.org/install.html pertaining towards your OS.
 4. The API is configured to run on port 5000 in the application.yml file. This can be changed to any available port to avoid conflicts by changing the port number within the application.yml file.
 5. The API may then be run with the play/run button of the used IDE or, both can be compiled to jar files using the mvwn command and run with the commands  `java -jar executable.jar` where the executable.jar is the compiled jar file for the components.
+## Features
+ - Updates database on schedule
+  - The API updates an AWS EC2 instance of a postgres database every hour with the metadata of the projects pulled using the GitHub Api.
+ ## Dependencies
+  -Spring boot
+  -Maven
+  -Postgresql
+  
