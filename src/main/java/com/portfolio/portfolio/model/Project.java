@@ -1,4 +1,7 @@
 package com.portfolio.portfolio.model;
+/*
+* Project object to transmit project data to frontend
+*/
 public class Project {
     private String id;
     private String name;
