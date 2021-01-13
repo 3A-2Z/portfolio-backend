@@ -23,7 +23,9 @@ public class PortfolioApplication {
 	public PortfolioApplication(PortfolioService portfolioService) {
 		this.portfolioService = portfolioService;
 	}
-
+	/*
+	* Makes call to GitHub API every hour to retrieve new and updated projects
+	*/
 	@Scheduled(initialDelay = 1000L, fixedDelayString = "PT1H")
 	void Job() throws InterruptedException, SQLException {
 		
