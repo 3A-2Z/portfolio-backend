@@ -18,10 +18,16 @@ public class PortfolioService {
     public PortfolioService(@Qualifier("postgres") PortfolioDao portfolioDao){
         this.portfolioDao = portfolioDao;
     } 
+    /*
+    * Returns stored project data
+    */
     public  ArrayList<Project> getProjects() throws SQLException {
         return portfolioDao.getProjects();
         
     }
+    /*
+    * Retrieves projects from GitHub
+    */
     public  void getGitHubProjects() throws SQLException {
         portfolioDao.getGitHubProjects();
         
