@@ -27,6 +27,9 @@ public class PortfolioDataAccessService implements PortfolioDao {
         this.jdbcTemplate = jdbcTemplate;
         this.restTemplate = restTemplateBuilder.build();
     }
+    /*
+    *Get's GitHub project metadata using GitHub API and stores data in EC2 instance
+    */
 
     @Override
     public void getGitHubProjects() {
@@ -47,6 +50,9 @@ public class PortfolioDataAccessService implements PortfolioDao {
        
         
     }
+    /*
+    * Returns all project metadata stored in database
+    */
     @Override
     public ArrayList<Project> getProjects(){
         final String query = "SELECT * FROM projects";
