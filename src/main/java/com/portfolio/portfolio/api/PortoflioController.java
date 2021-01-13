@@ -28,8 +28,11 @@ public class PortoflioController {
     @GetMapping("/")
     public String awsHealthCheck(){
        return "app is running just fine";    
-    }  
-    @CrossOrigin("http://localhost:5000")
+    } 
+    /*
+    *returns all project metadate from database
+    */
+    @CrossOrigin("http://azizamino.com")
     @GetMapping("/git/proj")
     public ArrayList<Project> getProjects() throws SQLException {
         return portfolioService.getProjects();
