@@ -11,7 +11,7 @@ server:
 app: 
     datasource:
         jdbc-url: jdbc:postgresql://aa1eutbh9gpqsvr.cfrwarbl7jf8.us-east-1.rds.amazonaws.com:5432/ebdb
-        username: aaminopro
-        password: HEXB16OCTALB8
+        username: 
+        password: 
         pool-size: 50   
  
